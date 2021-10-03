@@ -1,0 +1,16 @@
+.cart-box{
+    border: 1px solid rgb(155, 86, 86);
+    margin-right:0px;
+  
+    width: 150%;
+}
+.welcome-style{
+   color: rgba(44, 44, 44, 0.596);
+    
+}
+.iteams{
+    color: rgba(44, 44, 44, 0.596);
+    text-align: start;
+    padding-left: 110px;
+
+}
