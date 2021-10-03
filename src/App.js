@@ -5,8 +5,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  NavLink,
+  Link
 } from "react-router-dom";
 import Home from './components/Home/Home';
 import Services from './components/Services/Services';
@@ -14,15 +13,17 @@ import AboutUs from './components/AboutUs/AboutUs';
 import Articles from './components/Articles/Articles';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import { Button, Container, Form, FormControl, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
   return (
     <div className="">
       
-     <Header></Header>
+     
      <Router>
-     <Navbar bg="light" expand="lg">
+     <Header></Header>
+     <Navbar bg="success bg-opacity-50" expand="lg">
   <Container fluid>
    <img style={{width:"10%",borderRadius:"20px"}} src="https://c.ndtvimg.com//yoga_625x300_1529482160763.jpg" alt="" />
     <Navbar.Toggle aria-controls="navbarScroll" />
@@ -71,7 +72,9 @@ function App() {
           <Home></Home>
        </Route>
      </Switch>
+     <Footer></Footer>
      </Router>
+     
     </div>
   );
 }
