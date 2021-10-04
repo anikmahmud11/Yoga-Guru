@@ -24,7 +24,7 @@ function App() {
      <Header></Header>
      <Navigation></Navigation>
      <Switch>
-       <Route exact path="/home">
+       <Route exact path="/">
           <Home></Home>
        </Route>
        <Route exact path ="/service">
@@ -36,13 +36,13 @@ function App() {
        <Route exact path="/articles">
          <Articles></Articles>
        </Route>
+       
+       <Route exact path ='/home'>
+          <Home></Home>
+       </Route>
        <Route  path ='*'>
           <ErrorPage></ErrorPage>
        </Route>
-       <Route  path ='/'>
-          <Home></Home>
-       </Route>
-       
      </Switch>
      <Footer></Footer>
      </Router>
