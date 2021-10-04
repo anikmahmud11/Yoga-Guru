@@ -1,5 +1,5 @@
 ## Live Link
- Link :
+ Link : https://determined-thompson-4529ee.netlify.app
 
 ## Project Name
 Name : Yoga Guru
