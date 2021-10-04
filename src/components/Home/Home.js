@@ -1,9 +1,13 @@
+import { animated } from '@react-spring/web';
 import React, { useEffect, useState } from 'react';
-import { Carousel } from 'react-bootstrap';
+import { Button, Carousel } from 'react-bootstrap';
 import Courses from '../Courses/Courses';
 import './Home.css'
+import { useSpring } from 'react-spring'
+import { Link } from 'react-router-dom';
 
 const Home = () => {
+  const [flip, set] = useState(false);
   const [courses , setCourses]=useState([]);
   useEffect(()=>{
     fetch('./fakedata.json')
@@ -16,6 +20,14 @@ const Home = () => {
           <div className="text-center text-success mt-5 pt-4 ">
             <h3>YOGA COLLECTION</h3>
             <p className="pt-3">Improve strength, balance and flexibility to feel your absolute best! Join our excellent certified yoga instructors to explore movement or take your practice to the next level.</p>
+            <Button className="bg-success mt-4 w-50 rounded "><animated.div style={useSpring({ 
+                  to: { opacity: 1 },
+                  reset: true,
+                  reverse: flip,
+                  delay: 300, 
+                  onRest: () => set(!flip),
+                  from: { opacity: 0 } 
+                  })}><h5>Sign Up Now !</h5></animated.div></Button>
           </div>
         <div className="w-100 h-100">
         <Carousel variant="dark">
@@ -56,8 +68,8 @@ const Home = () => {
 </Carousel> 
         </div>
         </div>
-        <div className="text-center mt-5 "> 
-          <h3>Our Services</h3>
+        <div className="text-center mt-5 text-success  "> 
+          <Link className="btn text-success" to="/service"><h3>Our Services</h3></Link>
         </div>
         <div className="courses-container">
           {

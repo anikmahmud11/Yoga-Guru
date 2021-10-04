@@ -1,12 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import './Cart.css';
 const Cart = () => {
     const element = <FontAwesomeIcon icon={faShoppingCart} />
     return (
-        <div className="cart-box">
-            <div className="welcome-style">
-                <h5>Welcome To Our Online Yoga Class</h5>
+        <div className="cart-box mt-2 mb-2">
+            <div className="welcome-style text-success">
+                <h5>Welcome To  Online Yoga Class</h5>
                 <h6> {element} My Cart</h6>
              </div>
             <div className="iteams">

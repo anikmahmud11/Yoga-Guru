@@ -11,15 +11,15 @@ const Courses = (props) => {
     return  (
         <div className="course-card">
             <img src={image} alt="" />
-            <h4>{name}</h4>
-            <h4>{type}</h4>
+            <h5>{name}</h5>
+            <h5>{type}</h5>
             
-            <h4 className="rating"> Rating : <Rating
+            <h6 className="rating"> Rating : <Rating
             initialRating={rating}
             emptySymbol="far fa-star"
             fullSymbol="fas fa-star"
-            readonly></Rating></h4>
-            <h4>price : {cost}</h4>
+            readonly></Rating></h6>
+            <h5>price : {cost}</h5>
             <button  className="add-to-cart-btn">{icon3} Add to Cart</button>
             <br />
             <br />

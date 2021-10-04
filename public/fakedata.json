@@ -1,7 +1,7 @@
 [
     {
         "image":"https://c.ndtvimg.com//yoga_625x300_1529482160763.jpg",
-        "name":"BALANCE AND HIPS",
+        "name":"Balance and Hips",
         "type":"Advanced",
         "rating":4,
         "cost":700
@@ -19,6 +19,13 @@
         "type":"Intermediat",
         "rating":4,
         "cost":600
+    },
+    {
+        "image":"https://thegoddessgarden.com/wp-content/uploads/2020/01/yoga_iyengar-960x540-1.jpg",
+        "name":"Iyengar yoga",
+        "type":"Intermediat",
+        "rating":2,
+        "cost":500
     }
    
 ]
