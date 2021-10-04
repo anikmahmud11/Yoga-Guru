@@ -1,14 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Carousel } from 'react-bootstrap';
+import Courses from '../Courses/Courses';
+import './Home.css'
 
 const Home = () => {
+  const [courses , setCourses]=useState([]);
+  useEffect(()=>{
+    fetch('./fakedata.json')
+    .then(res=>res.json())
+    .then(data=>setCourses(data));
+  },[])
     return (
-        <div>
+       <div>
+          <div className="d-flex mt-5">
+          <div className="text-center text-success mt-5 pt-4 ">
+            <h3>YOGA COLLECTION</h3>
+            <p className="pt-3">Improve strength, balance and flexibility to feel your absolute best! Join our excellent certified yoga instructors to explore movement or take your practice to the next level.</p>
+          </div>
+        <div className="w-100 h-100">
         <Carousel variant="dark">
   <Carousel.Item className="text-center mb-3 ">
     <img
-      className="w-25"
-      src="https://image.shutterstock.com/image-vector/young-girl-practices-yoga-lotus-260nw-1681422205.jpg"
+      className="w-50 h-50 mt-3"
+      src="https://www.yogajournal.com/wp-content/uploads/2021/01/yoga-poses-graphic_getty-images.jpg"
       alt=""
     />
     
@@ -18,7 +32,7 @@ const Home = () => {
   </Carousel.Item>
   <Carousel.Item className="text-center mb-3">
     <img
-      className="w-25 mt-5 "
+      className="w-50 h-50 mt-3"
       src="http://thekolkatamail.com/wp-content/uploads/2021/06/all-about-yoga-mega-722x406.jpg"
       alt="Second slide"
     />
@@ -29,17 +43,34 @@ const Home = () => {
   </Carousel.Item>
   <Carousel.Item className="text-center mb-3">
     <img
-      className="w-25 mt-5 "
-      src="https://i.insider.com/600af7c2c94799001992cc62?width=1136&format=jpeg"
+      className="w-50 h-50 mt-3 "
+      src="https://i.ytimg.com/vi/m756Gz8de4M/maxresdefault.jpg"
       alt="Third slide"
     />
     
       <h5>Cardio Yoga</h5>
       <p>Intermediate || Rechel </p>
+     
     
   </Carousel.Item>
 </Carousel> 
         </div>
+        </div>
+        <div className="text-center mt-5 "> 
+          <h3>Our Services</h3>
+        </div>
+        <div className="courses-container">
+          {
+             
+              courses.map(course=><Courses
+              key={courses.name}
+              course={course}
+              ></Courses>)
+            
+          }
+        </div>
+       </div>
+        
     );
 };
 

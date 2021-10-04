@@ -1,0 +1,24 @@
+[
+    {
+        "image":"https://c.ndtvimg.com//yoga_625x300_1529482160763.jpg",
+        "name":"BALANCE AND HIPS",
+        "type":"Advanced",
+        "rating":4,
+        "cost":700
+    },
+    {
+        "image":"https://mindbodygreen-res.cloudinary.com/images/w_767,q_auto:eco,f_auto,fl_lossy/org/7xfl56o82k70oy7ca/vinyasa-yoga-101.jpg",
+        "name":"Vinyasa yoga",
+        "type":"Beginner",
+        "rating":5,
+        "cost":900
+    },
+    {
+        "image":"https://fitsri.com/wp-content/uploads/2020/12/hatha-yoga-benefits-1024x683.jpg",
+        "name":"Hatha yoga",
+        "type":"Intermediat",
+        "rating":4,
+        "cost":600
+    }
+   
+]

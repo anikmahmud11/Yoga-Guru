@@ -1,0 +1,25 @@
+.course-card{
+    background-color:rgba(105, 216, 138, 0.63) ;
+    border: 2px solid rgba(15, 219, 255, 0.788);
+    margin: 30px;
+    padding: 5px;
+    color: rgba(94, 51, 51, 0.712);
+    border-radius: 30px;
+}
+.course-card img{
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+}
+.add-to-cart-btn{
+    border: 1px solid lightskyblue;
+  background-color: #1cbd6c;
+  border-radius: 8px;  
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 16px;
+}
+.rating{
+    color: rgb(167, 141, 75);
+}
+
