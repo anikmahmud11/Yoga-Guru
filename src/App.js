@@ -5,6 +5,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  
 } from "react-router-dom";
 import Home from './components/Home/Home';
 import Services from './components/Services/Services';
@@ -35,12 +36,13 @@ function App() {
        <Route exact path="/articles">
          <Articles></Articles>
        </Route>
-       <Route exact path ='*'>
+       <Route  path ='*'>
           <ErrorPage></ErrorPage>
        </Route>
-       <Route exact  path ='/'>
+       <Route  path ='/'>
           <Home></Home>
        </Route>
+       
      </Switch>
      <Footer></Footer>
      </Router>
