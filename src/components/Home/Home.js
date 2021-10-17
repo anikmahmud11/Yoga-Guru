@@ -16,7 +16,7 @@ const Home = () => {
   },[])
     return (
        <div>
-          <div className="d-flex mt-5">
+          <div className="mt-5  extra ">
           <div className="text-center text-success mt-5 pt-4 ">
             <h3>YOGA COLLECTION</h3>
             <p className="pt-3">Improve strength, balance and flexibility to feel your absolute best! Join our excellent certified yoga instructors to explore movement or take your practice to the next level.</p>

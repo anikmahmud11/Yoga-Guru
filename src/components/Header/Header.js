@@ -6,7 +6,7 @@ import { useSpring, animated } from 'react-spring'
 const Header= () => {
     const [flip, set] = useState(false)
     return (
-        <div className="container d-flex justify-content-center">
+        <div className="container header-flex  justify-content-center">
             <div className="header-style text-success">
                <h1> Yoga Guru </h1>
               <animated.div style={useSpring({ 

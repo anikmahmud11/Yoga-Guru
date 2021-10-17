@@ -15,11 +15,16 @@ import ErrorPage from './components/ErrorPage/ErrorPage';
 
 import Footer from './components/Footer/Footer';
 import Navigation from './components/NavBar/Navigation';
+import Booking from './components/Booking/Booking/Booking';
+import Login from './components/Login/Login/Login';
+import AuthProvider from './context/AuthProvider';
+import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 
 
 function App() {
   return (
     <div className="">
+     <AuthProvider>
      <Router>
      <Header></Header>
      <Navigation></Navigation>
@@ -40,6 +45,12 @@ function App() {
        <Route exact path ='/home'>
           <Home></Home>
        </Route>
+       <Route exact path ='/login'>
+          <Login></Login>
+       </Route>
+       <PrivateRoute exact path="/booking/:serviceId">
+           <Booking></Booking>
+       </PrivateRoute>
        <Route  path ='*'>
           <ErrorPage></ErrorPage>
        </Route>
@@ -47,6 +58,7 @@ function App() {
      <Footer></Footer>
      </Router>
      
+     </AuthProvider>
     </div>
   );
 }

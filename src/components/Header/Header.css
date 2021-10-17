@@ -7,3 +7,19 @@
     width: 100%;
     text-align: center;
 }
+.header-flex {
+    display: flex;
+}
+/* Make it responsive */
+@media only screen and (max-width:688px) {
+    
+    .header-flex{
+        display: block;
+    }
+}
+@media only screen and (min-width:689px) and (max-width: 991px){
+    
+    .header-flex {
+        display: block;
+    }
+}

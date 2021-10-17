@@ -1,5 +1,6 @@
 [
     {
+        "id":1,
         "image":"https://c.ndtvimg.com//yoga_625x300_1529482160763.jpg",
         "name":"Balance and Hips",
         "type":"Advanced",
@@ -7,6 +8,7 @@
         "cost":700
     },
     {
+        "id":2,
         "image":"https://mindbodygreen-res.cloudinary.com/images/w_767,q_auto:eco,f_auto,fl_lossy/org/7xfl56o82k70oy7ca/vinyasa-yoga-101.jpg",
         "name":"Vinyasa yoga",
         "type":"Beginner",
@@ -14,6 +16,7 @@
         "cost":900
     },
     {
+        "id":3,
         "image":"https://fitsri.com/wp-content/uploads/2020/12/hatha-yoga-benefits-1024x683.jpg",
         "name":"Hatha yoga",
         "type":"Intermediat",
@@ -21,6 +24,7 @@
         "cost":600
     },
     {
+        "id":4,
         "image":"https://thegoddessgarden.com/wp-content/uploads/2020/01/yoga_iyengar-960x540-1.jpg",
         "name":"Iyengar yoga",
         "type":"Intermediat",
@@ -28,6 +32,7 @@
         "cost":500
     },
     {
+        "id":5,
         "image":"https://www.verywellfit.com/thmb/9mvd2f3SUHQvyDmsd0DhkzDSCmA=/500x350/filters:no_upscale():max_bytes(150000):strip_icc()/kundalini-56aa41b75f9b58b7d0035165.jpg",
         "name":" Kundalini yoga",
         "type":"Advanced",
@@ -35,6 +40,7 @@
         "cost":900
     },
     {
+        "id":6,
         "image":"https://www.yogabasics.com/yogabasics2017/wp-content/uploads/2021/03/Ashtanga-Yoga.jpeg",
         "name":" Ashtanga yoga",
         "type":"Intermediat",
@@ -42,6 +48,7 @@
         "cost":600
     },
     {
+        "id":7,
         "image":"https://post.greatist.com/wp-content/uploads/sites/2/2019/04/Bikram20Yoga_CG_featured-1.jpg",
         "name":" Bikram yoga",
         "type":"Beginner",
@@ -49,6 +56,7 @@
         "cost":300
     },
     {
+        "id":8,
         "image":"https://mindbodygreen-res.cloudinary.com/images/w_767,q_auto:eco,f_auto,fl_lossy/org/68ab5yqb6k6mk696v/yin-yoga-101.jpg",
         "name":" Yin yoga",
         "type":"Advanced",
@@ -56,6 +64,7 @@
         "cost":700
     },
     {
+        "id":9,
         "image":"https://blog.yogamatters.com/wp-content/uploads/2019/06/savasana-pose-856x610.jpg",
         "name":" Yin yoga",
         "type":"Beginner",
@@ -63,6 +72,7 @@
         "cost":500
     },
     {
+        "id":10,
         "image":"https://cdn5.vectorstock.com/i/1000x1000/47/29/prenatal-yoga-pregnant-woman-doing-exercise-vector-10234729.jpg",
         "name":"Prenatal yoga",
         "type":"Beginner",
@@ -70,6 +80,7 @@
         "cost":1000
     },
     {
+        "id":11,
         "image":"https://drprem.com/wellness/wp-content/uploads/sites/7/2016/01/Anusara-Yoga.jpg",
         "name":"Anusara yoga",
         "type":"Intermediat",
@@ -77,6 +88,7 @@
         "cost":600
     },
     {
+        "id":12,
         "image":"https://yogajaya.com/wp-content/uploads/2017/10/yogajaya_jen_peters_3_sidecrows.jpg",
         "name":"Jivamukti yoga",
         "type":"Advanced",
